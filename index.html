@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CatBox</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Copperplate:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="cathouse.png" alt="" id="bg">
+    <div id="veil"></div>
+
+    <div class="side-panel" id="side-left">
+        <p class="side-title">Random Cat</p>
+        <img id="cat-fetch-img" alt="A random cat" src="">
+        <button id="fetch-cat-btn">New Cat Photo</button>
+    </div>
+
+    <div class="content">
+       <h1><center>CatBox</center></h1>
+        <p class="subtitle">Schrödinger's Cat in a Box, open it now!</p>
+
+        <div class="box-wrap">
+            <button id="box">
+                <img src="boxclosed.png" id="box-img" alt="A box">
+            </button>
+            <img src="catalive.png" id="cat-img" alt="" class="cat-reveal">
+        </div>
+
+        <p id="result"></p>
+
+        <button id="reset-btn">New Cat</button>
+
+        <p id="score">Alive&nbsp;<span id="alive-count">0</span>&nbsp;&nbsp;·&nbsp;&nbsp;Dead&nbsp;<span id="dead-count">0</span></p>
+
+    <div class="side-panel" id="side-right">
+        <p class="side-title">Cat Fact</p>
+        <p id="cat-fact-text">Loading a cat fact...</p>
+        <button id="fetch-fact-btn">New Fact</button>
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
